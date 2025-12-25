@@ -13,8 +13,7 @@ def get_projects():
             'title': 'Portfolio Website',
             'description': 'A modern portfolio built with React and Flask',
             'tech': ['React', 'Flask', 'Tailwind CSS'],
-            'github': 'https://github.com/darksightkellar/portfolio',
-            'demo': 'https://lkelvin.pythonanywhere.com'
+            'github': 'https://github.com/darksightkellar/portfolio'
         },
         # Add more projects here
     ]
