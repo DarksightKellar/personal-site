@@ -23,7 +23,11 @@ export default defineConfig([
       },
     },
     rules: {
-      'no-unused-vars': ['error', { varsIgnorePattern: '^[A-Z_]' }],
+      // Allow unused vars for React components and framer-motion
+      'no-unused-vars': ['error', {
+        varsIgnorePattern: '^[A-Z_]|^motion$',
+        argsIgnorePattern: '^_'
+      }],
     },
   },
 ])
