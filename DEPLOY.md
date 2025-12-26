@@ -2,7 +2,7 @@
 
 ## Prerequisites
 - PythonAnywhere account with web app already created
-- GitHub repo: `https://github.com/darksightkellar/portfolio.git`
+- GitHub repo: `https://github.com/darksightkellar/personal-site.git`
 
 ---
 
@@ -12,7 +12,7 @@ Open a **Bash console** on PythonAnywhere:
 
 ```bash
 cd ~
-git clone https://github.com/darksightkellar/portfolio.git
+git clone https://github.com/darksightkellar/personal-site.git
 ```
 
 ---
@@ -36,7 +36,7 @@ echo '[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"' >> ~/.bashrc
 Install the project's Node version:
 
 ```bash
-cd ~/portfolio
+cd ~/personal-site
 nvm install
 ```
 
@@ -45,7 +45,7 @@ nvm install
 ## Step 3: Set Up Python Virtual Environment
 
 ```bash
-cd ~/portfolio/backend
+cd ~/personal-site/backend
 mkvirtualenv --python=/usr/bin/python3.12 portfolio-env
 pip install -r requirements.txt
 ```
@@ -55,7 +55,7 @@ pip install -r requirements.txt
 ## Step 4: Build Frontend
 
 ```bash
-cd ~/portfolio
+cd ~/personal-site
 nvm use
 cd frontend
 npm ci
@@ -116,7 +116,7 @@ Click **Reload** on the Web tab to apply changes.
 When you push updates to GitHub:
 
 ```bash
-cd ~/portfolio
+cd ~/personal-site
 git pull origin main
 
 # Update backend

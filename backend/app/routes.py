@@ -14,7 +14,7 @@ def get_projects():
             'description': 'Showcasing my work and projects',
             'tech': ['React', 'Flask', 'Tailwind'],
             'link': '/projects/portfolio',
-            'github': 'https://github.com/darksightkellar/portfolio'
+            'github': 'https://github.com/darksightkellar/personal-site'
         },
         {
             'id': 2,

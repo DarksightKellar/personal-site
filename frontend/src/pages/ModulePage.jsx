@@ -8,7 +8,7 @@ const modules = {
         title: 'Portfolio',
         description: 'Personal portfolio showcasing my work',
         status: 'coming-soon',
-        github: 'https://github.com/darksightkellar/portfolio',
+        github: 'https://github.com/darksightkellar/personal-site',
     },
     todo: {
         title: 'Todo App',

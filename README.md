@@ -26,8 +26,8 @@ A modular personal website built with **React** (Vite) and **Flask**. Supports m
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/darksightkellar/portfolio.git
-cd portfolio
+git clone https://github.com/darksightkellar/personal-site.git
+cd personal-site
 ```
 
 ### 2. Backend Setup

@@ -1,11 +1,11 @@
 #!/bin/bash
 # PythonAnywhere Deployment Update Script
-# Run this from ~/portfolio to update the site after pushing to GitHub
+# Run this from ~/personal-site to update the site after pushing to GitHub
 
 set -e  # Exit on error
 
 echo "🔄 Pulling latest changes..."
-cd ~/portfolio
+cd ~/personal-site
 git pull origin main
 
 echo "📦 Updating backend dependencies..."
@@ -14,7 +14,7 @@ source ~/.virtualenvs/portfolio-env/bin/activate
 pip install -r requirements.txt
 
 echo "🔧 Building frontend..."
-cd ~/portfolio
+cd ~/personal-site
 source ~/.nvm/nvm.sh
 nvm use
 cd frontend
