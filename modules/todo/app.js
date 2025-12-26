@@ -1,4 +1,7 @@
-// Todo App - In-memory storage
+// Todo App - In-memory storage with limits
+const MAX_TODOS = 20;
+const MAX_TEXT_LENGTH = 100;
+
 const todos = [
     { id: 1, text: 'Learn JavaScript', completed: true },
     { id: 2, text: 'Build a todo app', completed: false },
@@ -8,6 +11,9 @@ const todos = [
 const form = document.getElementById('todo-form');
 const input = document.getElementById('todo-input');
 const list = document.getElementById('todo-list');
+
+// Set max length on input
+input.maxLength = MAX_TEXT_LENGTH;
 
 function render() {
     list.innerHTML = '';
@@ -22,10 +28,22 @@ function render() {
         `;
         list.appendChild(li);
     });
+
+    // Update input placeholder with remaining count
+    const remaining = MAX_TODOS - todos.length;
+    if (remaining <= 0) {
+        input.placeholder = 'Max todos reached';
+        input.disabled = true;
+    } else {
+        input.placeholder = `Add a todo... (${remaining} left)`;
+        input.disabled = false;
+    }
 }
 
 function add(text) {
-    todos.push({ id: Date.now(), text, completed: false });
+    if (todos.length >= MAX_TODOS) return;
+    const trimmed = text.slice(0, MAX_TEXT_LENGTH);
+    todos.push({ id: Date.now(), text: trimmed, completed: false });
     render();
 }
 
@@ -47,7 +65,7 @@ function remove(id) {
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
-    if (input.value.trim()) {
+    if (input.value.trim() && todos.length < MAX_TODOS) {
         add(input.value.trim());
         input.value = '';
     }
