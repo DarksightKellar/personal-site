@@ -3,7 +3,7 @@ const experience = [
         id: 'decent',
         role: 'Senior Software & Contracts Engineer',
         company: 'Decent Labs (Decent DAO)',
-        date: '2021 – 2025',
+        date: 'Jan 2021 – Dec 2025',
         details: [
             'Developed and maintained smart contracts for the Sarcophagus Protocol',
             'Built production Web3 applications including gasless voting interface',
@@ -15,12 +15,32 @@ const experience = [
         id: 'frostbyte',
         role: 'Lead Mobile Engineer',
         company: 'Frostbyte',
-        date: '2021 – 2022',
+        date: 'Jan 2021 – Dec 2022',
         details: [
-            'Led development of cross-platform mobile app (iOS & Android) using Flutter/Dart',
+            'Led cross-platform mobile app development (iOS & Android) using Flutter/Dart',
             'Implemented secret sharding, offline-first storage, and secure data distribution',
             'Shipped to production with thousands of active users',
             'Owned architecture decisions, CI/CD, and release pipelines'
+        ]
+    },
+    {
+        id: 'mudupay',
+        role: 'Software Engineer',
+        company: 'Mudupay / Delivast',
+        date: '2021',
+        details: [
+            'Contributed to fintech and logistics platforms',
+            'Worked across frontend and backend with emphasis on robustness and UX'
+        ]
+    },
+    {
+        id: 'postagraph',
+        role: 'Lead Software Engineer',
+        company: 'Postagraph',
+        date: '2020',
+        details: [
+            'Led development of core product features and frontend systems',
+            'Delivered scalable, user-focused solutions under tight timelines'
         ]
     },
     {
@@ -35,23 +55,13 @@ const experience = [
         ]
     },
     {
-        id: 'postagraph',
-        role: 'Lead Software Engineer',
-        company: 'Postagraph',
-        date: '2020',
+        id: 'gta',
+        role: 'Graduate Teaching Assistant',
+        company: 'Computer Graphics',
+        date: '2018 – 2020',
         details: [
-            'Led development of core product features and frontend systems',
-            'Delivered scalable, user-focused solutions under tight timelines'
-        ]
-    },
-    {
-        id: 'mudupay',
-        role: 'Software Engineer',
-        company: 'Mudupay / Delivast',
-        date: '2021',
-        details: [
-            'Contributed to fintech and logistics platforms',
-            'Worked across frontend and backend with emphasis on robustness and UX'
+            'Assisted with undergraduate teaching in Computer Graphics',
+            'Supported coursework, labs, and student mentoring'
         ]
     }
 ];
