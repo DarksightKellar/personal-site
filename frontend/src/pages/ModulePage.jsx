@@ -7,7 +7,8 @@ const modules = {
     portfolio: {
         title: 'Portfolio',
         description: 'Personal portfolio showcasing my work',
-        status: 'coming-soon',
+        status: 'ready',
+        path: '/modules/portfolio/dist/index.html',
         github: 'https://github.com/darksightkellar/personal-site',
     },
     todo: {
