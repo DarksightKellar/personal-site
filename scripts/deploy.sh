@@ -14,9 +14,16 @@ source ~/.virtualenvs/portfolio-env/bin/activate
 pip install -r requirements.txt
 
 
+
+echo "🧹 Cleaning up old builds..."
+rm -rf ~/personal-site/modules/portfolio/node_modules
+rm -rf ~/personal-site/modules/portfolio/dist
+rm -rf ~/personal-site/frontend/node_modules
+rm -rf ~/personal-site/frontend/dist
+
 echo "🔧 Building portfolio module..."
 cd ~/personal-site/modules/portfolio
-npm install
+npm ci
 npm run build
 
 echo "🔧 Building frontend..."
