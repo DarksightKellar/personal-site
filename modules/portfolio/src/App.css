@@ -1,10 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-:root {
+.portfolio-module {
     --bg-primary: #0f172a;
     --bg-secondary: #1e293b;
     --bg-card: rgba(30, 41, 59, 0.5);
@@ -14,16 +8,12 @@
     --accent: #06b6d4;
     --accent-hover: #22d3ee;
     --border: #334155;
-}
 
-body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 50%, var(--bg-primary) 100%);
     min-height: 100vh;
     color: var(--text-primary);
-}
-
-.app {
+    
     max-width: 1200px;
     margin: 0 auto;
     padding: 2rem;

@@ -5,6 +5,7 @@ import About from './pages/About';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 import ModulePage from './pages/ModulePage';
+import PortfolioApp from '../../modules/portfolio/src/App';
 import './index.css';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/projects/portfolio" element={<PortfolioApp />} />
           <Route path="/projects/:moduleId" element={<ModulePage />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
